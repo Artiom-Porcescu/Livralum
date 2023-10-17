@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		611AFE852ADEAABD00E561EA /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611AFE842ADEAABD00E561EA /* Socket.swift */; };
+		611AFE872ADEC3C600E561EA /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611AFE862ADEC3C600E561EA /* News.swift */; };
+		61AC665F2AD7D0A000E17578 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC665E2AD7D0A000E17578 /* LoginView.swift */; };
+		61AC66612AD7D27B00E17578 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66602AD7D27B00E17578 /* RegistrationView.swift */; };
+		61AC66632AD7D31A00E17578 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61AC66622AD7D31A00E17578 /* GoogleService-Info.plist */; };
+		61AC66692AD7D61700E17578 /* MainMenuBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66682AD7D61700E17578 /* MainMenuBtn.swift */; };
+		61AC666B2AD7D79800E17578 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC666A2AD7D79800E17578 /* TextFieldView.swift */; };
+		61AC666D2AD7DF1000E17578 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC666C2AD7DF1000E17578 /* ForgotPasswordView.swift */; };
+		61AC66722AD8018700E17578 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66712AD8018700E17578 /* User.swift */; };
+		61AC66752AD8058300E17578 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC66742AD8058300E17578 /* FirebaseAnalytics */; };
+		61AC66772AD8058300E17578 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC66762AD8058300E17578 /* FirebaseAnalyticsSwift */; };
+		61AC66792AD8058300E17578 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC66782AD8058300E17578 /* FirebaseAppCheck */; };
+		61AC667B2AD8058300E17578 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC667A2AD8058300E17578 /* FirebaseAuth */; };
+		61AC667D2AD8058300E17578 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC667C2AD8058300E17578 /* FirebaseDatabase */; };
+		61AC667F2AD8058300E17578 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC667E2AD8058300E17578 /* FirebaseDatabaseSwift */; };
+		61AC66812AD8058300E17578 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC66802AD8058300E17578 /* FirebaseFirestore */; };
+		61AC66832AD8058300E17578 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC66822AD8058300E17578 /* FirebaseFirestoreSwift */; };
+		61AC66852AD8058300E17578 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC66842AD8058300E17578 /* FirebaseFunctions */; };
+		61AC66872AD8058300E17578 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC66862AD8058300E17578 /* FirebaseStorage */; };
+		61AC66892AD8058300E17578 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC66882AD8058300E17578 /* FirebaseStorageCombine-Community */; };
+		61AC668D2AD8062400E17578 /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC668C2AD8062400E17578 /* AuthVM.swift */; };
+		61AC66952AD84C3900E17578 /* UpperNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66942AD84C3900E17578 /* UpperNavigation.swift */; };
+		61AC66972AD84C4B00E17578 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66962AD84C4B00E17578 /* SideMenuView.swift */; };
+		61AC66992AD84C6D00E17578 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66982AD84C6C00E17578 /* ListItemView.swift */; };
+		61AC669B2AD84C8000E17578 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC669A2AD84C8000E17578 /* CartItem.swift */; };
+		61AC669D2AD84CBC00E17578 /* HomepageNewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC669C2AD84CBC00E17578 /* HomepageNewsItem.swift */; };
+		61AC669F2AD84CD500E17578 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC669E2AD84CD500E17578 /* CarouselView.swift */; };
+		61AC66A12AD84CDE00E17578 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66A02AD84CDE00E17578 /* Homepage.swift */; };
+		61AC66A32AD84CE800E17578 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66A22AD84CE800E17578 /* Cart.swift */; };
+		61AC66A52AD84D0900E17578 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66A42AD84D0900E17578 /* Contacts.swift */; };
+		61AC66A72AD84D2500E17578 /* LampsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66A62AD84D2500E17578 /* LampsCollection.swift */; };
+		61AC66A92AD84D3200E17578 /* PlafsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66A82AD84D3200E17578 /* PlafsCollection.swift */; };
+		61AC66AB2AD84D3E00E17578 /* SocketsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66AA2AD84D3E00E17578 /* SocketsCollection.swift */; };
+		61AC66AD2AD84D4900E17578 /* SwitchesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66AC2AD84D4900E17578 /* SwitchesCollection.swift */; };
+		61AC66B12AD9344B00E17578 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66B02AD9344B00E17578 /* ContentView.swift */; };
+		61AC66D42ADAAC2300E17578 /* Marquee in Frameworks */ = {isa = PBXBuildFile; productRef = 61AC66D32ADAAC2300E17578 /* Marquee */; };
+		61AC66D62ADC159B00E17578 /* GoodsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66D52ADC159B00E17578 /* GoodsVM.swift */; };
+		61AC66D82ADC41B400E17578 /* Lamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC66D72ADC41B400E17578 /* Lamp.swift */; };
+		61E085EA2ABAE220003F68F6 /* LivralumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E085E92ABAE220003F68F6 /* LivralumApp.swift */; };
+		61E085EC2ABAE220003F68F6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E085EB2ABAE220003F68F6 /* WelcomeView.swift */; };
+		61E085EE2ABAE221003F68F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E085ED2ABAE221003F68F6 /* Assets.xcassets */; };
+		61E085F12ABAE221003F68F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E085F02ABAE221003F68F6 /* Preview Assets.xcassets */; };
+		61E085FB2ABAE221003F68F6 /* LivralumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E085FA2ABAE221003F68F6 /* LivralumTests.swift */; };
+		61E086052ABAE222003F68F6 /* LivralumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E086042ABAE222003F68F6 /* LivralumUITests.swift */; };
+		61E086072ABAE222003F68F6 /* LivralumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E086062ABAE222003F68F6 /* LivralumUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61E085F72ABAE221003F68F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E085DE2ABAE220003F68F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61E085E52ABAE220003F68F6;
+			remoteInfo = Livralum;
+		};
+		61E086012ABAE222003F68F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E085DE2ABAE220003F68F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61E085E52ABAE220003F68F6;
+			remoteInfo = Livralum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		611AFE842ADEAABD00E561EA /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		611AFE862ADEC3C600E561EA /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		61AC665E2AD7D0A000E17578 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		61AC66602AD7D27B00E17578 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		61AC66622AD7D31A00E17578 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		61AC66682AD7D61700E17578 /* MainMenuBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuBtn.swift; sourceTree = "<group>"; };
+		61AC666A2AD7D79800E17578 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		61AC666C2AD7DF1000E17578 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		61AC66712AD8018700E17578 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		61AC668C2AD8062400E17578 /* AuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVM.swift; sourceTree = "<group>"; };
+		61AC66942AD84C3900E17578 /* UpperNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperNavigation.swift; sourceTree = "<group>"; };
+		61AC66962AD84C4B00E17578 /* SideMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		61AC66982AD84C6C00E17578 /* ListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		61AC669A2AD84C8000E17578 /* CartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		61AC669C2AD84CBC00E17578 /* HomepageNewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageNewsItem.swift; sourceTree = "<group>"; };
+		61AC669E2AD84CD500E17578 /* CarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		61AC66A02AD84CDE00E17578 /* Homepage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		61AC66A22AD84CE800E17578 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		61AC66A42AD84D0900E17578 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		61AC66A62AD84D2500E17578 /* LampsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LampsCollection.swift; sourceTree = "<group>"; };
+		61AC66A82AD84D3200E17578 /* PlafsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlafsCollection.swift; sourceTree = "<group>"; };
+		61AC66AA2AD84D3E00E17578 /* SocketsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketsCollection.swift; sourceTree = "<group>"; };
+		61AC66AC2AD84D4900E17578 /* SwitchesCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchesCollection.swift; sourceTree = "<group>"; };
+		61AC66B02AD9344B00E17578 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		61AC66D52ADC159B00E17578 /* GoodsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsVM.swift; sourceTree = "<group>"; };
+		61AC66D72ADC41B400E17578 /* Lamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp.swift; sourceTree = "<group>"; };
+		61E085E62ABAE220003F68F6 /* Livralum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livralum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E085E92ABAE220003F68F6 /* LivralumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivralumApp.swift; sourceTree = "<group>"; };
+		61E085EB2ABAE220003F68F6 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		61E085ED2ABAE221003F68F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61E085F02ABAE221003F68F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61E085F62ABAE221003F68F6 /* LivralumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivralumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E085FA2ABAE221003F68F6 /* LivralumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivralumTests.swift; sourceTree = "<group>"; };
+		61E086002ABAE222003F68F6 /* LivralumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivralumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E086042ABAE222003F68F6 /* LivralumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivralumUITests.swift; sourceTree = "<group>"; };
+		61E086062ABAE222003F68F6 /* LivralumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivralumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61E085E32ABAE220003F68F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AC66892AD8058300E17578 /* FirebaseStorageCombine-Community in Frameworks */,
+				61AC667F2AD8058300E17578 /* FirebaseDatabaseSwift in Frameworks */,
+				61AC667D2AD8058300E17578 /* FirebaseDatabase in Frameworks */,
+				61AC66D42ADAAC2300E17578 /* Marquee in Frameworks */,
+				61AC66772AD8058300E17578 /* FirebaseAnalyticsSwift in Frameworks */,
+				61AC66872AD8058300E17578 /* FirebaseStorage in Frameworks */,
+				61AC66852AD8058300E17578 /* FirebaseFunctions in Frameworks */,
+				61AC66792AD8058300E17578 /* FirebaseAppCheck in Frameworks */,
+				61AC66752AD8058300E17578 /* FirebaseAnalytics in Frameworks */,
+				61AC667B2AD8058300E17578 /* FirebaseAuth in Frameworks */,
+				61AC66812AD8058300E17578 /* FirebaseFirestore in Frameworks */,
+				61AC66832AD8058300E17578 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E085F32ABAE221003F68F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E085FD2ABAE222003F68F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61AC66642AD7D37500E17578 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				61AC668B2AD805D500E17578 /* View Model */,
+				61AC668A2AD805CD00E17578 /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		61AC66652AD7D59800E17578 /* Reusable Components */ = {
+			isa = PBXGroup;
+			children = (
+				61AC66682AD7D61700E17578 /* MainMenuBtn.swift */,
+				61AC666A2AD7D79800E17578 /* TextFieldView.swift */,
+				61AC66942AD84C3900E17578 /* UpperNavigation.swift */,
+				61AC66962AD84C4B00E17578 /* SideMenuView.swift */,
+				61AC66982AD84C6C00E17578 /* ListItemView.swift */,
+			);
+			path = "Reusable Components";
+			sourceTree = "<group>";
+		};
+		61AC66702AD8014B00E17578 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61AC66712AD8018700E17578 /* User.swift */,
+				61AC66D72ADC41B400E17578 /* Lamp.swift */,
+				611AFE842ADEAABD00E561EA /* Socket.swift */,
+				611AFE862ADEC3C600E561EA /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		61AC668A2AD805CD00E17578 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61E085EB2ABAE220003F68F6 /* WelcomeView.swift */,
+				61AC665E2AD7D0A000E17578 /* LoginView.swift */,
+				61AC66602AD7D27B00E17578 /* RegistrationView.swift */,
+				61AC666C2AD7DF1000E17578 /* ForgotPasswordView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61AC668B2AD805D500E17578 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				61AC668C2AD8062400E17578 /* AuthVM.swift */,
+				61AC66D52ADC159B00E17578 /* GoodsVM.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		61AC668E2AD84B3D00E17578 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				61AC66A02AD84CDE00E17578 /* Homepage.swift */,
+				61AC66932AD84C0E00E17578 /* News */,
+				61AC66922AD84C0400E17578 /* Carousel */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		61AC668F2AD84B5500E17578 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				61AC66A22AD84CE800E17578 /* Cart.swift */,
+				61AC669A2AD84C8000E17578 /* CartItem.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		61AC66902AD84B6600E17578 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				61AC66A42AD84D0900E17578 /* Contacts.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		61AC66912AD84B7000E17578 /* Commodities */ = {
+			isa = PBXGroup;
+			children = (
+				61AC66A62AD84D2500E17578 /* LampsCollection.swift */,
+				61AC66A82AD84D3200E17578 /* PlafsCollection.swift */,
+				61AC66AA2AD84D3E00E17578 /* SocketsCollection.swift */,
+				61AC66AC2AD84D4900E17578 /* SwitchesCollection.swift */,
+			);
+			path = Commodities;
+			sourceTree = "<group>";
+		};
+		61AC66922AD84C0400E17578 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				61AC669E2AD84CD500E17578 /* CarouselView.swift */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		61AC66932AD84C0E00E17578 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				61AC669C2AD84CBC00E17578 /* HomepageNewsItem.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		61E085DD2ABAE220003F68F6 = {
+			isa = PBXGroup;
+			children = (
+				61E085E82ABAE220003F68F6 /* Livralum */,
+				61E085F92ABAE221003F68F6 /* LivralumTests */,
+				61E086032ABAE222003F68F6 /* LivralumUITests */,
+				61E085E72ABAE220003F68F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61E085E72ABAE220003F68F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61E085E62ABAE220003F68F6 /* Livralum.app */,
+				61E085F62ABAE221003F68F6 /* LivralumTests.xctest */,
+				61E086002ABAE222003F68F6 /* LivralumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61E085E82ABAE220003F68F6 /* Livralum */ = {
+			isa = PBXGroup;
+			children = (
+				61AC66912AD84B7000E17578 /* Commodities */,
+				61AC66902AD84B6600E17578 /* Contacts */,
+				61AC668F2AD84B5500E17578 /* Cart */,
+				61AC668E2AD84B3D00E17578 /* Homepage */,
+				61AC66652AD7D59800E17578 /* Reusable Components */,
+				61AC66642AD7D37500E17578 /* Authentication */,
+				61AC66702AD8014B00E17578 /* Model */,
+				61E085ED2ABAE221003F68F6 /* Assets.xcassets */,
+				61E085E92ABAE220003F68F6 /* LivralumApp.swift */,
+				61E085EF2ABAE221003F68F6 /* Preview Content */,
+				61AC66622AD7D31A00E17578 /* GoogleService-Info.plist */,
+				61AC66B02AD9344B00E17578 /* ContentView.swift */,
+			);
+			path = Livralum;
+			sourceTree = "<group>";
+		};
+		61E085EF2ABAE221003F68F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				61E085F02ABAE221003F68F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		61E085F92ABAE221003F68F6 /* LivralumTests */ = {
+			isa = PBXGroup;
+			children = (
+				61E085FA2ABAE221003F68F6 /* LivralumTests.swift */,
+			);
+			path = LivralumTests;
+			sourceTree = "<group>";
+		};
+		61E086032ABAE222003F68F6 /* LivralumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61E086042ABAE222003F68F6 /* LivralumUITests.swift */,
+				61E086062ABAE222003F68F6 /* LivralumUITestsLaunchTests.swift */,
+			);
+			path = LivralumUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61E085E52ABAE220003F68F6 /* Livralum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E0860A2ABAE222003F68F6 /* Build configuration list for PBXNativeTarget "Livralum" */;
+			buildPhases = (
+				61E085E22ABAE220003F68F6 /* Sources */,
+				61E085E32ABAE220003F68F6 /* Frameworks */,
+				61E085E42ABAE220003F68F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Livralum;
+			packageProductDependencies = (
+				61AC66742AD8058300E17578 /* FirebaseAnalytics */,
+				61AC66762AD8058300E17578 /* FirebaseAnalyticsSwift */,
+				61AC66782AD8058300E17578 /* FirebaseAppCheck */,
+				61AC667A2AD8058300E17578 /* FirebaseAuth */,
+				61AC667C2AD8058300E17578 /* FirebaseDatabase */,
+				61AC667E2AD8058300E17578 /* FirebaseDatabaseSwift */,
+				61AC66802AD8058300E17578 /* FirebaseFirestore */,
+				61AC66822AD8058300E17578 /* FirebaseFirestoreSwift */,
+				61AC66842AD8058300E17578 /* FirebaseFunctions */,
+				61AC66862AD8058300E17578 /* FirebaseStorage */,
+				61AC66882AD8058300E17578 /* FirebaseStorageCombine-Community */,
+				61AC66D32ADAAC2300E17578 /* Marquee */,
+			);
+			productName = Livralum;
+			productReference = 61E085E62ABAE220003F68F6 /* Livralum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61E085F52ABAE221003F68F6 /* LivralumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E0860D2ABAE222003F68F6 /* Build configuration list for PBXNativeTarget "LivralumTests" */;
+			buildPhases = (
+				61E085F22ABAE221003F68F6 /* Sources */,
+				61E085F32ABAE221003F68F6 /* Frameworks */,
+				61E085F42ABAE221003F68F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61E085F82ABAE221003F68F6 /* PBXTargetDependency */,
+			);
+			name = LivralumTests;
+			productName = LivralumTests;
+			productReference = 61E085F62ABAE221003F68F6 /* LivralumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61E085FF2ABAE222003F68F6 /* LivralumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E086102ABAE222003F68F6 /* Build configuration list for PBXNativeTarget "LivralumUITests" */;
+			buildPhases = (
+				61E085FC2ABAE222003F68F6 /* Sources */,
+				61E085FD2ABAE222003F68F6 /* Frameworks */,
+				61E085FE2ABAE222003F68F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61E086022ABAE222003F68F6 /* PBXTargetDependency */,
+			);
+			name = LivralumUITests;
+			productName = LivralumUITests;
+			productReference = 61E086002ABAE222003F68F6 /* LivralumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61E085DE2ABAE220003F68F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					61E085E52ABAE220003F68F6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					61E085F52ABAE221003F68F6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 61E085E52ABAE220003F68F6;
+					};
+					61E085FF2ABAE222003F68F6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 61E085E52ABAE220003F68F6;
+					};
+				};
+			};
+			buildConfigurationList = 61E085E12ABAE220003F68F6 /* Build configuration list for PBXProject "Livralum" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61E085DD2ABAE220003F68F6;
+			packageReferences = (
+				61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				61AC66D22ADAAC2300E17578 /* XCRemoteSwiftPackageReference "Marquee" */,
+			);
+			productRefGroup = 61E085E72ABAE220003F68F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61E085E52ABAE220003F68F6 /* Livralum */,
+				61E085F52ABAE221003F68F6 /* LivralumTests */,
+				61E085FF2ABAE222003F68F6 /* LivralumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61E085E42ABAE220003F68F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E085F12ABAE221003F68F6 /* Preview Assets.xcassets in Resources */,
+				61E085EE2ABAE221003F68F6 /* Assets.xcassets in Resources */,
+				61AC66632AD7D31A00E17578 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E085F42ABAE221003F68F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E085FE2ABAE222003F68F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61E085E22ABAE220003F68F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AC66D82ADC41B400E17578 /* Lamp.swift in Sources */,
+				61AC668D2AD8062400E17578 /* AuthVM.swift in Sources */,
+				61AC66AD2AD84D4900E17578 /* SwitchesCollection.swift in Sources */,
+				61AC665F2AD7D0A000E17578 /* LoginView.swift in Sources */,
+				61AC66A52AD84D0900E17578 /* Contacts.swift in Sources */,
+				61AC666D2AD7DF1000E17578 /* ForgotPasswordView.swift in Sources */,
+				61AC66992AD84C6D00E17578 /* ListItemView.swift in Sources */,
+				61E085EC2ABAE220003F68F6 /* WelcomeView.swift in Sources */,
+				61AC66D62ADC159B00E17578 /* GoodsVM.swift in Sources */,
+				61AC66AB2AD84D3E00E17578 /* SocketsCollection.swift in Sources */,
+				61AC66972AD84C4B00E17578 /* SideMenuView.swift in Sources */,
+				61AC666B2AD7D79800E17578 /* TextFieldView.swift in Sources */,
+				61E085EA2ABAE220003F68F6 /* LivralumApp.swift in Sources */,
+				61AC66722AD8018700E17578 /* User.swift in Sources */,
+				61AC66612AD7D27B00E17578 /* RegistrationView.swift in Sources */,
+				61AC669F2AD84CD500E17578 /* CarouselView.swift in Sources */,
+				61AC66952AD84C3900E17578 /* UpperNavigation.swift in Sources */,
+				61AC66A32AD84CE800E17578 /* Cart.swift in Sources */,
+				61AC66A92AD84D3200E17578 /* PlafsCollection.swift in Sources */,
+				61AC66B12AD9344B00E17578 /* ContentView.swift in Sources */,
+				611AFE852ADEAABD00E561EA /* Socket.swift in Sources */,
+				611AFE872ADEC3C600E561EA /* News.swift in Sources */,
+				61AC669B2AD84C8000E17578 /* CartItem.swift in Sources */,
+				61AC66692AD7D61700E17578 /* MainMenuBtn.swift in Sources */,
+				61AC669D2AD84CBC00E17578 /* HomepageNewsItem.swift in Sources */,
+				61AC66A72AD84D2500E17578 /* LampsCollection.swift in Sources */,
+				61AC66A12AD84CDE00E17578 /* Homepage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E085F22ABAE221003F68F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E085FB2ABAE221003F68F6 /* LivralumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E085FC2ABAE222003F68F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E086072ABAE222003F68F6 /* LivralumUITestsLaunchTests.swift in Sources */,
+				61E086052ABAE222003F68F6 /* LivralumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61E085F82ABAE221003F68F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61E085E52ABAE220003F68F6 /* Livralum */;
+			targetProxy = 61E085F72ABAE221003F68F6 /* PBXContainerItemProxy */;
+		};
+		61E086022ABAE222003F68F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61E085E52ABAE220003F68F6 /* Livralum */;
+			targetProxy = 61E086012ABAE222003F68F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		61E086082ABAE222003F68F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61E086092ABAE222003F68F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61E0860B2ABAE222003F68F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Livralum/Preview Content\"";
+				DEVELOPMENT_TEAM = PWD28R24HG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Livralum;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Artiom-Porcescu.Livralum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		61E0860C2ABAE222003F68F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Livralum/Preview Content\"";
+				DEVELOPMENT_TEAM = PWD28R24HG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Livralum;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Artiom-Porcescu.Livralum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		61E0860E2ABAE222003F68F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWD28R24HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Artiom-Porcescu.LivralumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Livralum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Livralum";
+			};
+			name = Debug;
+		};
+		61E0860F2ABAE222003F68F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWD28R24HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Artiom-Porcescu.LivralumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Livralum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Livralum";
+			};
+			name = Release;
+		};
+		61E086112ABAE222003F68F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWD28R24HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Artiom-Porcescu.LivralumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Livralum;
+			};
+			name = Debug;
+		};
+		61E086122ABAE222003F68F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWD28R24HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Artiom-Porcescu.LivralumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Livralum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61E085E12ABAE220003F68F6 /* Build configuration list for PBXProject "Livralum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E086082ABAE222003F68F6 /* Debug */,
+				61E086092ABAE222003F68F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61E0860A2ABAE222003F68F6 /* Build configuration list for PBXNativeTarget "Livralum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E0860B2ABAE222003F68F6 /* Debug */,
+				61E0860C2ABAE222003F68F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61E0860D2ABAE222003F68F6 /* Build configuration list for PBXNativeTarget "LivralumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E0860E2ABAE222003F68F6 /* Debug */,
+				61E0860F2ABAE222003F68F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61E086102ABAE222003F68F6 /* Build configuration list for PBXNativeTarget "LivralumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E086112ABAE222003F68F6 /* Debug */,
+				61E086122ABAE222003F68F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.16.0;
+			};
+		};
+		61AC66D22ADAAC2300E17578 /* XCRemoteSwiftPackageReference "Marquee" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIKit/Marquee";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		61AC66742AD8058300E17578 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		61AC66762AD8058300E17578 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		61AC66782AD8058300E17578 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		61AC667A2AD8058300E17578 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		61AC667C2AD8058300E17578 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		61AC667E2AD8058300E17578 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		61AC66802AD8058300E17578 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		61AC66822AD8058300E17578 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		61AC66842AD8058300E17578 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		61AC66862AD8058300E17578 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		61AC66882AD8058300E17578 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66732AD8058300E17578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		61AC66D32ADAAC2300E17578 /* Marquee */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61AC66D22ADAAC2300E17578 /* XCRemoteSwiftPackageReference "Marquee" */;
+			productName = Marquee;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 61E085DE2ABAE220003F68F6 /* Project object */;
+}
