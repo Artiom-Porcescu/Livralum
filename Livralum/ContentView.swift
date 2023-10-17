@@ -2,25 +2,26 @@
 //  ContentView.swift
 //  Livralum
 //
-//  Created by Artiom Porcescu on 20.09.2023.
+//  Created by Artiom Porcescu on 13.10.2023.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var viewModel: AuthVM
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Group {
+            if viewModel.userSession != nil {
+                Homepage()
+            } else {
+                WelcomeView()
+            }
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }
